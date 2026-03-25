@@ -1,0 +1,22 @@
+name: plugin-hub-mcp
+description: Central MCP server powering 10 Claude Code plugins — env management, API testing, log analysis, performance testing, CI/CD, dependency auditing, cloud costs, schema management, notifications, and uptime monitoring.
+version: 1
+entry: dist/index.js
+runtime: typescript
+pricing:
+  model: freemium
+  tiers:
+    - name: Free
+      price: 0
+      limits:
+        requests_per_day: 50
+    - name: Pro
+      price: 9
+      interval: month
+      limits:
+        requests_per_day: 10000
+    - name: Enterprise
+      price: 49
+      interval: month
+      limits:
+        requests_per_day: unlimited
