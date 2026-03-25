@@ -37,14 +37,14 @@ async function main() {
   const isHosted = process.env.PORT || process.env.MCPIZE;
 
   if (isHosted) {
-    const port = parseInt(process.env.PORT || "3000", 10);
+    const port = parseInt(process.env.PORT || "8080", 10);
     const httpServer = createServer(async (req, res) => {
       if (req.method === "POST" && req.url === "/mcp") {
         const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
         res.setHeader("Content-Type", "application/json");
         await server.connect(transport);
         await transport.handleRequest(req, res);
-      } else if (req.method === "GET" && req.url === "/health") {
+      } else if (req.method === "GET" && (req.url === "/health" || req.url === "/ping")) {
         res.writeHead(200);
         res.end("ok");
       } else {
