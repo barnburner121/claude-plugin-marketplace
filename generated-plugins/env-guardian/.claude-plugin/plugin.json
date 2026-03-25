@@ -1,0 +1,8 @@
+{
+  "name": "env-guardian",
+  "description": "Scan for exposed secrets, generate .env templates, validate environment configs, and rotate secrets",
+  "version": "1.0.0",
+  "author": {"name": "barnburner121"},
+  "repository": {"type": "git", "url": "https://github.com/barnburner121/claude-plugin-marketplace"},
+  "license": "MIT"
+}

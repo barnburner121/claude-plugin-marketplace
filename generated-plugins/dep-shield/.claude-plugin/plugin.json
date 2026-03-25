@@ -1,0 +1,8 @@
+{
+  "name": "dep-shield",
+  "description": "Audit dependencies for vulnerabilities, check for outdated packages, scan licenses for compliance, and plan safe updates",
+  "version": "1.0.0",
+  "author": {"name": "barnburner121"},
+  "repository": {"type": "git", "url": "https://github.com/barnburner121/claude-plugin-marketplace"},
+  "license": "MIT"
+}

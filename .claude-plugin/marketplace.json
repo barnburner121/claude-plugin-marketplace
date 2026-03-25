@@ -1,0 +1,58 @@
+{
+  "name": "barnburner121-plugins",
+  "owner": {
+    "name": "barnburner121"
+  },
+  "plugins": [
+    {
+      "name": "env-guardian",
+      "source": "./generated-plugins/env-guardian",
+      "description": "Scan for exposed secrets, generate .env templates, validate environment configs, and rotate secrets"
+    },
+    {
+      "name": "api-forge",
+      "source": "./generated-plugins/api-forge",
+      "description": "Generate API test suites, create mock servers, run contract tests, and benchmark endpoints"
+    },
+    {
+      "name": "log-sleuth",
+      "source": "./generated-plugins/log-sleuth",
+      "description": "Analyze log files for patterns, search with structured queries, get logging recommendations, and correlate across services"
+    },
+    {
+      "name": "perf-pilot",
+      "source": "./generated-plugins/perf-pilot",
+      "description": "Generate load tests, analyze performance bottlenecks, and create performance budgets with CI enforcement"
+    },
+    {
+      "name": "pipeline-ops",
+      "source": "./generated-plugins/pipeline-ops",
+      "description": "Generate CI/CD pipelines, debug build failures, optimize pipeline speed, and create multi-environment matrices"
+    },
+    {
+      "name": "dep-shield",
+      "source": "./generated-plugins/dep-shield",
+      "description": "Audit dependencies for vulnerabilities, check for outdated packages, scan licenses for compliance, and plan safe updates"
+    },
+    {
+      "name": "cost-hawk",
+      "source": "./generated-plugins/cost-hawk",
+      "description": "Analyze cloud infrastructure costs, optimize Docker images, tune database performance, and generate cost reports"
+    },
+    {
+      "name": "schema-drift",
+      "source": "./generated-plugins/schema-drift",
+      "description": "Generate database migrations, detect schema drift, validate migration safety, and auto-document schemas"
+    },
+    {
+      "name": "notify-hub",
+      "source": "./generated-plugins/notify-hub",
+      "description": "Set up notification services (email/SMS/push), create templates, and build notification pipelines with user preferences"
+    },
+    {
+      "name": "uptime-sentinel",
+      "source": "./generated-plugins/uptime-sentinel",
+      "description": "Create health check endpoints, set up uptime monitoring, generate status pages, and create incident runbooks"
+    }
+  ]
+}

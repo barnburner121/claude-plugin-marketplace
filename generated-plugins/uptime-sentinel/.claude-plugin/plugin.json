@@ -1,0 +1,8 @@
+{
+  "name": "uptime-sentinel",
+  "description": "Create health check endpoints, set up uptime monitoring, generate status pages, and create incident runbooks",
+  "version": "1.0.0",
+  "author": {"name": "barnburner121"},
+  "repository": {"type": "git", "url": "https://github.com/barnburner121/claude-plugin-marketplace"},
+  "license": "MIT"
+}

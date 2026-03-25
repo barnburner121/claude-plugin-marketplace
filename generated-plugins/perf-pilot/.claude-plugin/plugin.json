@@ -1,0 +1,8 @@
+{
+  "name": "perf-pilot",
+  "description": "Generate load tests, analyze performance bottlenecks, and create performance budgets with CI enforcement",
+  "version": "1.0.0",
+  "author": {"name": "barnburner121"},
+  "repository": {"type": "git", "url": "https://github.com/barnburner121/claude-plugin-marketplace"},
+  "license": "MIT"
+}

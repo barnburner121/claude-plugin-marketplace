@@ -1,0 +1,8 @@
+{
+  "name": "api-forge",
+  "description": "Generate API test suites, create mock servers, run contract tests, and benchmark endpoints",
+  "version": "1.0.0",
+  "author": {"name": "barnburner121"},
+  "repository": {"type": "git", "url": "https://github.com/barnburner121/claude-plugin-marketplace"},
+  "license": "MIT"
+}

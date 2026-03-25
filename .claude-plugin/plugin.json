@@ -1,0 +1,10 @@
+{
+  "name": "plugin-factory",
+  "description": "Automated Claude plugin generator and marketplace publisher",
+  "version": "1.0.0",
+  "author": {
+    "name": "Casey Baker"
+  },
+  "repository": "",
+  "license": "MIT"
+}
