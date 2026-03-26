@@ -1,0 +1,1 @@
+{"name":"fine-tune-prep","description":"Generate dataset preparation for model fine-tuning","version":"1.0.0","author":{"name":"barnburner121"},"repository":{"type":"git","url":"https://github.com/barnburner121/claude-plugin-marketplace"},"license":"MIT"}

@@ -1,0 +1,1 @@
+{"name":"grafana-dashboard","description":"Generate Grafana dashboard JSON definitions","version":"1.0.0","author":{"name":"barnburner121"},"repository":{"type":"git","url":"https://github.com/barnburner121/claude-plugin-marketplace"},"license":"MIT"}
