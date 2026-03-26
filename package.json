@@ -1,6 +1,6 @@
 {
   "name": "@barnburner121/plugin-hub-mcp",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "The largest Claude Code plugin marketplace. 500 plugins, 600+ developer tools in one MCP server. Security, testing, DevOps, CI/CD, databases, frontend, backend, API design, ML/AI, mobile, cloud, serverless, authentication, monitoring, and more.",
   "type": "module",
   "main": "dist/index.js",
