@@ -1,6 +1,6 @@
 {
   "name": "@barnburner121/plugin-hub-mcp",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Central MCP server powering all barnburner121 Claude plugins — env management, API testing, log analysis, performance testing, CI/CD, dependency auditing, cloud costs, schema management, notifications, and uptime monitoring.",
   "type": "module",
   "main": "dist/index.js",
