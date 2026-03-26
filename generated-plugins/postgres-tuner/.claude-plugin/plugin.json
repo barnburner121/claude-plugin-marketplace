@@ -1,0 +1,1 @@
+{"name":"postgres-tuner","description":"Generate PostgreSQL config tuning","version":"1.0.0","author":{"name":"barnburner121"},"repository":{"type":"git","url":"https://github.com/barnburner121/claude-plugin-marketplace"},"license":"MIT"}

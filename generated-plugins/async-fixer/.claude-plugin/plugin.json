@@ -1,0 +1,1 @@
+{"name":"async-fixer","description":"Detect async/await anti-patterns and race conditions","version":"1.0.0","author":{"name":"barnburner121"},"repository":{"type":"git","url":"https://github.com/barnburner121/claude-plugin-marketplace"},"license":"MIT"}

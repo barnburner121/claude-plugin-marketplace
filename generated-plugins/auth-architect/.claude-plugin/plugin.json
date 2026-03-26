@@ -1,0 +1,1 @@
+{"name":"auth-architect","description":"Generate authentication flows (JWT, OAuth2, session-based)","version":"1.0.0","author":{"name":"barnburner121"},"repository":{"type":"git","url":"https://github.com/barnburner121/claude-plugin-marketplace"},"license":"MIT"}

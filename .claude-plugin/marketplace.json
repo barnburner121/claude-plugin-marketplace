@@ -5,9 +5,44 @@
   },
   "plugins": [
     {
-      "name": "env-guardian",
-      "source": "./generated-plugins/env-guardian",
-      "description": "Scan for exposed secrets, generate .env templates, validate environment configs, and rotate secrets"
+      "name": "a11y-fixer",
+      "source": "./generated-plugins/a11y-fixer",
+      "description": "Scan HTML/JSX for accessibility issues"
+    },
+    {
+      "name": "accessibility-test",
+      "source": "./generated-plugins/accessibility-test",
+      "description": "Generate accessibility tests (WCAG)"
+    },
+    {
+      "name": "adr-creator",
+      "source": "./generated-plugins/adr-creator",
+      "description": "Create Architecture Decision Records"
+    },
+    {
+      "name": "alias-gen",
+      "source": "./generated-plugins/alias-gen",
+      "description": "Generate shell aliases for project commands"
+    },
+    {
+      "name": "animation-helper",
+      "source": "./generated-plugins/animation-helper",
+      "description": "Generate CSS/Framer Motion animations"
+    },
+    {
+      "name": "ansible-playbook",
+      "source": "./generated-plugins/ansible-playbook",
+      "description": "Generate Ansible playbooks"
+    },
+    {
+      "name": "api-changelog",
+      "source": "./generated-plugins/api-changelog",
+      "description": "Detect API changes between versions"
+    },
+    {
+      "name": "api-docs",
+      "source": "./generated-plugins/api-docs",
+      "description": "Generate OpenAPI/Swagger specs from route handlers"
     },
     {
       "name": "api-forge",
@@ -15,9 +50,704 @@
       "description": "Generate API test suites, create mock servers, run contract tests, and benchmark endpoints"
     },
     {
+      "name": "api-gateway",
+      "source": "./generated-plugins/api-gateway",
+      "description": "Generate API gateway configurations"
+    },
+    {
+      "name": "api-versioning",
+      "source": "./generated-plugins/api-versioning",
+      "description": "Set up API versioning strategies"
+    },
+    {
+      "name": "architecture-docs",
+      "source": "./generated-plugins/architecture-docs",
+      "description": "Generate architecture documentation with diagrams"
+    },
+    {
+      "name": "async-fixer",
+      "source": "./generated-plugins/async-fixer",
+      "description": "Detect async/await anti-patterns and race conditions"
+    },
+    {
+      "name": "audit-trail",
+      "source": "./generated-plugins/audit-trail",
+      "description": "Generate database audit trail systems"
+    },
+    {
+      "name": "auth-architect",
+      "source": "./generated-plugins/auth-architect",
+      "description": "Generate authentication flows (JWT, OAuth2, session-based)"
+    },
+    {
+      "name": "auto-scaling",
+      "source": "./generated-plugins/auto-scaling",
+      "description": "Generate auto-scaling policies"
+    },
+    {
+      "name": "azure-functions",
+      "source": "./generated-plugins/azure-functions",
+      "description": "Generate Azure Functions"
+    },
+    {
+      "name": "backup-planner",
+      "source": "./generated-plugins/backup-planner",
+      "description": "Generate database backup strategies"
+    },
+    {
+      "name": "batch-processor",
+      "source": "./generated-plugins/batch-processor",
+      "description": "Generate batch processing systems"
+    },
+    {
+      "name": "benchmark-suite",
+      "source": "./generated-plugins/benchmark-suite",
+      "description": "Generate micro-benchmark suites"
+    },
+    {
+      "name": "blue-green",
+      "source": "./generated-plugins/blue-green",
+      "description": "Generate blue-green deployment configs"
+    },
+    {
+      "name": "boilerplate-killer",
+      "source": "./generated-plugins/boilerplate-killer",
+      "description": "Detect and abstract repetitive code"
+    },
+    {
+      "name": "bulkhead-pattern",
+      "source": "./generated-plugins/bulkhead-pattern",
+      "description": "Generate bulkhead isolation patterns"
+    },
+    {
+      "name": "bundle-analyzer",
+      "source": "./generated-plugins/bundle-analyzer",
+      "description": "Analyze and optimize JS bundle size"
+    },
+    {
+      "name": "cache-architect",
+      "source": "./generated-plugins/cache-architect",
+      "description": "Design caching strategies with Redis"
+    },
+    {
+      "name": "canary-deploy",
+      "source": "./generated-plugins/canary-deploy",
+      "description": "Generate canary deployment strategies"
+    },
+    {
+      "name": "cdn-invalidation",
+      "source": "./generated-plugins/cdn-invalidation",
+      "description": "Generate CDN cache invalidation strategies"
+    },
+    {
+      "name": "cdn-setup",
+      "source": "./generated-plugins/cdn-setup",
+      "description": "Generate CDN configurations"
+    },
+    {
+      "name": "changelog-gen",
+      "source": "./generated-plugins/changelog-gen",
+      "description": "Generate changelogs from git commits"
+    },
+    {
+      "name": "chaos-engineer",
+      "source": "./generated-plugins/chaos-engineer",
+      "description": "Generate chaos engineering experiments"
+    },
+    {
+      "name": "circuit-breaker",
+      "source": "./generated-plugins/circuit-breaker",
+      "description": "Generate circuit breaker patterns"
+    },
+    {
+      "name": "cli-builder",
+      "source": "./generated-plugins/cli-builder",
+      "description": "Generate CLI tools from function signatures"
+    },
+    {
+      "name": "cloud-migration",
+      "source": "./generated-plugins/cloud-migration",
+      "description": "Generate cloud migration plans"
+    },
+    {
+      "name": "cloud-run",
+      "source": "./generated-plugins/cloud-run",
+      "description": "Generate Google Cloud Run configs"
+    },
+    {
+      "name": "cloudflare-worker",
+      "source": "./generated-plugins/cloudflare-worker",
+      "description": "Generate Cloudflare Worker scripts"
+    },
+    {
+      "name": "code-metrics",
+      "source": "./generated-plugins/code-metrics",
+      "description": "Generate code metrics: lines, complexity, maintainability"
+    },
+    {
+      "name": "code-smells",
+      "source": "./generated-plugins/code-smells",
+      "description": "Detect code smells with refactoring suggestions"
+    },
+    {
+      "name": "code-tour",
+      "source": "./generated-plugins/code-tour",
+      "description": "Generate interactive code tours"
+    },
+    {
+      "name": "codemod-gen",
+      "source": "./generated-plugins/codemod-gen",
+      "description": "Generate codemods for code transformations"
+    },
+    {
+      "name": "comment-quality",
+      "source": "./generated-plugins/comment-quality",
+      "description": "Audit comments, remove outdated, add missing docs"
+    },
+    {
+      "name": "commit-linter",
+      "source": "./generated-plugins/commit-linter",
+      "description": "Set up conventional commit linting"
+    },
+    {
+      "name": "complexity-reducer",
+      "source": "./generated-plugins/complexity-reducer",
+      "description": "Analyze cyclomatic complexity and suggest simplifications"
+    },
+    {
+      "name": "compliance-scanner",
+      "source": "./generated-plugins/compliance-scanner",
+      "description": "Scan infra configs against CIS benchmarks"
+    },
+    {
+      "name": "component-gen",
+      "source": "./generated-plugins/component-gen",
+      "description": "Generate React/Vue/Svelte components"
+    },
+    {
+      "name": "config-server",
+      "source": "./generated-plugins/config-server",
+      "description": "Generate centralized config management"
+    },
+    {
+      "name": "config-validator",
+      "source": "./generated-plugins/config-validator",
+      "description": "Validate configuration file schemas"
+    },
+    {
+      "name": "connection-pool",
+      "source": "./generated-plugins/connection-pool",
+      "description": "Optimize database connection pooling"
+    },
+    {
+      "name": "container-guard",
+      "source": "./generated-plugins/container-guard",
+      "description": "Audit Dockerfiles and docker-compose for security best practices"
+    },
+    {
+      "name": "contract-test-gen",
+      "source": "./generated-plugins/contract-test-gen",
+      "description": "Generate consumer-driven contract tests"
+    },
+    {
+      "name": "contrib-guide",
+      "source": "./generated-plugins/contrib-guide",
+      "description": "Generate CONTRIBUTING.md with guidelines"
+    },
+    {
+      "name": "cors-config",
+      "source": "./generated-plugins/cors-config",
+      "description": "Analyze and fix CORS configurations across API endpoints"
+    },
+    {
+      "name": "cost-alert",
+      "source": "./generated-plugins/cost-alert",
+      "description": "Generate cloud cost alerting configs"
+    },
+    {
+      "name": "cost-hawk",
+      "source": "./generated-plugins/cost-hawk",
+      "description": "Analyze cloud infrastructure costs, optimize Docker images, tune database performance, and generate cost reports"
+    },
+    {
+      "name": "coverage-analyzer",
+      "source": "./generated-plugins/coverage-analyzer",
+      "description": "Analyze test coverage gaps"
+    },
+    {
+      "name": "cqrs-setup",
+      "source": "./generated-plugins/cqrs-setup",
+      "description": "Generate CQRS patterns"
+    },
+    {
+      "name": "cron-scheduler",
+      "source": "./generated-plugins/cron-scheduler",
+      "description": "Generate cron job configurations"
+    },
+    {
+      "name": "csp-builder",
+      "source": "./generated-plugins/csp-builder",
+      "description": "Generate and validate Content Security Policy headers"
+    },
+    {
+      "name": "css-optimizer",
+      "source": "./generated-plugins/css-optimizer",
+      "description": "Find unused CSS and optimize stylesheets"
+    },
+    {
+      "name": "csv-processor",
+      "source": "./generated-plugins/csv-processor",
+      "description": "Generate CSV import/export functionality"
+    },
+    {
+      "name": "data-anonymizer",
+      "source": "./generated-plugins/data-anonymizer",
+      "description": "Generate data anonymization scripts"
+    },
+    {
+      "name": "data-archiver",
+      "source": "./generated-plugins/data-archiver",
+      "description": "Generate data archival strategies"
+    },
+    {
+      "name": "data-catalog",
+      "source": "./generated-plugins/data-catalog",
+      "description": "Generate data dictionaries and catalogs"
+    },
+    {
+      "name": "data-gen",
+      "source": "./generated-plugins/data-gen",
+      "description": "Generate realistic test data"
+    },
+    {
+      "name": "data-validator",
+      "source": "./generated-plugins/data-validator",
+      "description": "Generate data validation pipelines"
+    },
+    {
+      "name": "dead-code",
+      "source": "./generated-plugins/dead-code",
+      "description": "Find and remove unused code, functions, imports, variables"
+    },
+    {
+      "name": "debug-config",
+      "source": "./generated-plugins/debug-config",
+      "description": "Generate IDE debug configurations"
+    },
+    {
+      "name": "dep-shield",
+      "source": "./generated-plugins/dep-shield",
+      "description": "Audit dependencies for vulnerabilities, check for outdated packages, scan licenses for compliance, and plan safe updates"
+    },
+    {
+      "name": "dependency-graph",
+      "source": "./generated-plugins/dependency-graph",
+      "description": "Visualize service dependencies"
+    },
+    {
+      "name": "dependency-graph-viz",
+      "source": "./generated-plugins/dependency-graph-viz",
+      "description": "Visualize project dependency trees"
+    },
+    {
+      "name": "dependency-injector",
+      "source": "./generated-plugins/dependency-injector",
+      "description": "Refactor to dependency injection patterns"
+    },
+    {
+      "name": "devcontainer",
+      "source": "./generated-plugins/devcontainer",
+      "description": "Generate VS Code devcontainer configs"
+    },
+    {
+      "name": "diagram-gen",
+      "source": "./generated-plugins/diagram-gen",
+      "description": "Generate Mermaid/PlantUML diagrams from code"
+    },
+    {
+      "name": "disaster-recovery",
+      "source": "./generated-plugins/disaster-recovery",
+      "description": "Generate disaster recovery plans"
+    },
+    {
+      "name": "distributed-tracing",
+      "source": "./generated-plugins/distributed-tracing",
+      "description": "Generate distributed tracing setup"
+    },
+    {
+      "name": "dns-config",
+      "source": "./generated-plugins/dns-config",
+      "description": "Generate DNS configurations"
+    },
+    {
+      "name": "docker-compose-gen",
+      "source": "./generated-plugins/docker-compose-gen",
+      "description": "Generate docker-compose files"
+    },
+    {
+      "name": "dotfile-gen",
+      "source": "./generated-plugins/dotfile-gen",
+      "description": "Generate project dotfiles"
+    },
+    {
+      "name": "duplication-hunter",
+      "source": "./generated-plugins/duplication-hunter",
+      "description": "Find duplicate code blocks and suggest DRY refactoring"
+    },
+    {
+      "name": "dynamodb-designer",
+      "source": "./generated-plugins/dynamodb-designer",
+      "description": "Design DynamoDB tables"
+    },
+    {
+      "name": "e2e-scenario",
+      "source": "./generated-plugins/e2e-scenario",
+      "description": "Generate end-to-end test scenarios"
+    },
+    {
+      "name": "edge-config",
+      "source": "./generated-plugins/edge-config",
+      "description": "Generate edge computing configurations"
+    },
+    {
+      "name": "editor-config",
+      "source": "./generated-plugins/editor-config",
+      "description": "Generate unified editor configurations"
+    },
+    {
+      "name": "env-guardian",
+      "source": "./generated-plugins/env-guardian",
+      "description": "Scan for exposed secrets, generate .env templates, validate environment configs, and rotate secrets"
+    },
+    {
+      "name": "env-sync",
+      "source": "./generated-plugins/env-sync",
+      "description": "Generate environment sync scripts"
+    },
+    {
+      "name": "error-boundary",
+      "source": "./generated-plugins/error-boundary",
+      "description": "Generate error boundary components"
+    },
+    {
+      "name": "error-handler",
+      "source": "./generated-plugins/error-handler",
+      "description": "Audit error handling and add proper try/catch patterns"
+    },
+    {
+      "name": "etl-builder",
+      "source": "./generated-plugins/etl-builder",
+      "description": "Generate ETL pipeline code"
+    },
+    {
+      "name": "event-sourcing",
+      "source": "./generated-plugins/event-sourcing",
+      "description": "Generate event sourcing implementations"
+    },
+    {
+      "name": "event-system",
+      "source": "./generated-plugins/event-system",
+      "description": "Generate event-driven architectures"
+    },
+    {
+      "name": "feature-flag",
+      "source": "./generated-plugins/feature-flag",
+      "description": "Generate feature flag systems"
+    },
+    {
+      "name": "file-upload",
+      "source": "./generated-plugins/file-upload",
+      "description": "Generate file upload systems"
+    },
+    {
+      "name": "fixture-factory",
+      "source": "./generated-plugins/fixture-factory",
+      "description": "Generate test fixtures for data models"
+    },
+    {
+      "name": "fixture-snapshot",
+      "source": "./generated-plugins/fixture-snapshot",
+      "description": "Generate database fixture snapshots"
+    },
+    {
+      "name": "flaky-test-finder",
+      "source": "./generated-plugins/flaky-test-finder",
+      "description": "Identify and fix flaky tests"
+    },
+    {
+      "name": "font-optimizer",
+      "source": "./generated-plugins/font-optimizer",
+      "description": "Optimize web font loading"
+    },
+    {
+      "name": "form-builder",
+      "source": "./generated-plugins/form-builder",
+      "description": "Generate form components with validation"
+    },
+    {
+      "name": "function-splitter",
+      "source": "./generated-plugins/function-splitter",
+      "description": "Identify overly long functions and suggest splits"
+    },
+    {
+      "name": "gdpr-toolkit",
+      "source": "./generated-plugins/gdpr-toolkit",
+      "description": "Generate GDPR compliance: consent forms, data export, deletion"
+    },
+    {
+      "name": "git-hooks",
+      "source": "./generated-plugins/git-hooks",
+      "description": "Generate Git hooks for validation"
+    },
+    {
+      "name": "git-workflow",
+      "source": "./generated-plugins/git-workflow",
+      "description": "Generate Git branching strategies"
+    },
+    {
+      "name": "github-actions-gen",
+      "source": "./generated-plugins/github-actions-gen",
+      "description": "Generate GitHub Actions workflows"
+    },
+    {
+      "name": "gitlab-ci-gen",
+      "source": "./generated-plugins/gitlab-ci-gen",
+      "description": "Generate GitLab CI pipelines"
+    },
+    {
+      "name": "glossary-builder",
+      "source": "./generated-plugins/glossary-builder",
+      "description": "Extract domain terms and generate glossary"
+    },
+    {
+      "name": "graph-db",
+      "source": "./generated-plugins/graph-db",
+      "description": "Generate graph database schemas"
+    },
+    {
+      "name": "graphql-builder",
+      "source": "./generated-plugins/graphql-builder",
+      "description": "Generate GraphQL schemas and resolvers"
+    },
+    {
+      "name": "grpc-gen",
+      "source": "./generated-plugins/grpc-gen",
+      "description": "Generate gRPC protobuf definitions"
+    },
+    {
+      "name": "health-dashboard",
+      "source": "./generated-plugins/health-dashboard",
+      "description": "Generate admin health dashboards"
+    },
+    {
+      "name": "helm-chart",
+      "source": "./generated-plugins/helm-chart",
+      "description": "Generate Helm charts"
+    },
+    {
+      "name": "hipaa-guard",
+      "source": "./generated-plugins/hipaa-guard",
+      "description": "Audit code for HIPAA compliance issues"
+    },
+    {
+      "name": "i18n-extractor",
+      "source": "./generated-plugins/i18n-extractor",
+      "description": "Extract strings and set up internationalization"
+    },
+    {
+      "name": "iac-scanner",
+      "source": "./generated-plugins/iac-scanner",
+      "description": "Scan Terraform/CloudFormation/K8s manifests for misconfigurations and security issues"
+    },
+    {
+      "name": "idempotency",
+      "source": "./generated-plugins/idempotency",
+      "description": "Generate idempotency implementations"
+    },
+    {
+      "name": "image-optimizer",
+      "source": "./generated-plugins/image-optimizer",
+      "description": "Generate image optimization pipelines"
+    },
+    {
+      "name": "import-optimizer",
+      "source": "./generated-plugins/import-optimizer",
+      "description": "Clean up and organize imports, remove unused"
+    },
+    {
+      "name": "infra-diagram",
+      "source": "./generated-plugins/infra-diagram",
+      "description": "Generate infrastructure diagrams from IaC"
+    },
+    {
+      "name": "input-sanitizer",
+      "source": "./generated-plugins/input-sanitizer",
+      "description": "Scan code for missing input validation and generate sanitizers"
+    },
+    {
+      "name": "integration-test-gen",
+      "source": "./generated-plugins/integration-test-gen",
+      "description": "Generate integration tests for services"
+    },
+    {
+      "name": "issue-template",
+      "source": "./generated-plugins/issue-template",
+      "description": "Generate issue templates"
+    },
+    {
+      "name": "jsdoc-writer",
+      "source": "./generated-plugins/jsdoc-writer",
+      "description": "Generate JSDoc/TSDoc comments for exported functions"
+    },
+    {
+      "name": "json-schema-gen",
+      "source": "./generated-plugins/json-schema-gen",
+      "description": "Generate JSON schemas from data/types"
+    },
+    {
+      "name": "k8s-manifest",
+      "source": "./generated-plugins/k8s-manifest",
+      "description": "Generate Kubernetes manifests"
+    },
+    {
+      "name": "lambda-builder",
+      "source": "./generated-plugins/lambda-builder",
+      "description": "Generate AWS Lambda functions"
+    },
+    {
+      "name": "legacy-modernizer",
+      "source": "./generated-plugins/legacy-modernizer",
+      "description": "Identify legacy patterns and suggest modern replacements"
+    },
+    {
+      "name": "license-gen",
+      "source": "./generated-plugins/license-gen",
+      "description": "Generate LICENSE files and source headers"
+    },
+    {
+      "name": "load-balancer",
+      "source": "./generated-plugins/load-balancer",
+      "description": "Generate load balancer configurations"
+    },
+    {
+      "name": "log-rotation",
+      "source": "./generated-plugins/log-rotation",
+      "description": "Set up log rotation configurations"
+    },
+    {
       "name": "log-sleuth",
       "source": "./generated-plugins/log-sleuth",
       "description": "Analyze log files for patterns, search with structured queries, get logging recommendations, and correlate across services"
+    },
+    {
+      "name": "magic-numbers",
+      "source": "./generated-plugins/magic-numbers",
+      "description": "Find magic numbers/strings and extract to constants"
+    },
+    {
+      "name": "makefile-gen",
+      "source": "./generated-plugins/makefile-gen",
+      "description": "Generate Makefiles for automation"
+    },
+    {
+      "name": "materialized-views",
+      "source": "./generated-plugins/materialized-views",
+      "description": "Generate materialized view definitions"
+    },
+    {
+      "name": "meta-tag-gen",
+      "source": "./generated-plugins/meta-tag-gen",
+      "description": "Generate meta tags, Open Graph, Twitter Cards"
+    },
+    {
+      "name": "middleware-gen",
+      "source": "./generated-plugins/middleware-gen",
+      "description": "Generate middleware chains"
+    },
+    {
+      "name": "migration-assistant",
+      "source": "./generated-plugins/migration-assistant",
+      "description": "Generate migration guides between versions"
+    },
+    {
+      "name": "migration-linter",
+      "source": "./generated-plugins/migration-linter",
+      "description": "Lint database migrations for safety"
+    },
+    {
+      "name": "mock-builder",
+      "source": "./generated-plugins/mock-builder",
+      "description": "Generate mocks, stubs, and fakes"
+    },
+    {
+      "name": "mongo-optimizer",
+      "source": "./generated-plugins/mongo-optimizer",
+      "description": "Analyze MongoDB queries and schemas"
+    },
+    {
+      "name": "monitoring-stack",
+      "source": "./generated-plugins/monitoring-stack",
+      "description": "Generate monitoring stack setup"
+    },
+    {
+      "name": "multi-region",
+      "source": "./generated-plugins/multi-region",
+      "description": "Generate multi-region deployment strategies"
+    },
+    {
+      "name": "multi-tenant",
+      "source": "./generated-plugins/multi-tenant",
+      "description": "Generate multi-tenancy patterns"
+    },
+    {
+      "name": "mutation-test",
+      "source": "./generated-plugins/mutation-test",
+      "description": "Set up mutation testing"
+    },
+    {
+      "name": "naming-conventions",
+      "source": "./generated-plugins/naming-conventions",
+      "description": "Enforce and fix naming conventions across a codebase"
+    },
+    {
+      "name": "nginx-config",
+      "source": "./generated-plugins/nginx-config",
+      "description": "Generate Nginx configurations"
+    },
+    {
+      "name": "notify-hub",
+      "source": "./generated-plugins/notify-hub",
+      "description": "Set up notification services (email/SMS/push), create templates, and build notification pipelines with user preferences"
+    },
+    {
+      "name": "null-safety",
+      "source": "./generated-plugins/null-safety",
+      "description": "Find null/undefined issues and add safety checks"
+    },
+    {
+      "name": "onboarding-guide",
+      "source": "./generated-plugins/onboarding-guide",
+      "description": "Generate developer onboarding guides"
+    },
+    {
+      "name": "orm-query-builder",
+      "source": "./generated-plugins/orm-query-builder",
+      "description": "Generate optimized ORM queries"
+    },
+    {
+      "name": "owasp-checker",
+      "source": "./generated-plugins/owasp-checker",
+      "description": "Scan codebase against OWASP Top 10 with remediation"
+    },
+    {
+      "name": "pagination-gen",
+      "source": "./generated-plugins/pagination-gen",
+      "description": "Generate pagination implementations"
+    },
+    {
+      "name": "pattern-matcher",
+      "source": "./generated-plugins/pattern-matcher",
+      "description": "Identify where design patterns should be applied"
     },
     {
       "name": "perf-pilot",
@@ -30,14 +760,129 @@
       "description": "Generate CI/CD pipelines, debug build failures, optimize pipeline speed, and create multi-environment matrices"
     },
     {
-      "name": "dep-shield",
-      "source": "./generated-plugins/dep-shield",
-      "description": "Audit dependencies for vulnerabilities, check for outdated packages, scan licenses for compliance, and plan safe updates"
+      "name": "postgres-tuner",
+      "source": "./generated-plugins/postgres-tuner",
+      "description": "Generate PostgreSQL config tuning"
     },
     {
-      "name": "cost-hawk",
-      "source": "./generated-plugins/cost-hawk",
-      "description": "Analyze cloud infrastructure costs, optimize Docker images, tune database performance, and generate cost reports"
+      "name": "pr-template",
+      "source": "./generated-plugins/pr-template",
+      "description": "Generate PR templates with checklists"
+    },
+    {
+      "name": "project-init",
+      "source": "./generated-plugins/project-init",
+      "description": "Generate project scaffolding"
+    },
+    {
+      "name": "property-tester",
+      "source": "./generated-plugins/property-tester",
+      "description": "Generate property-based tests"
+    },
+    {
+      "name": "pwa-builder",
+      "source": "./generated-plugins/pwa-builder",
+      "description": "Generate PWA setup: service worker, manifest"
+    },
+    {
+      "name": "query-optimizer",
+      "source": "./generated-plugins/query-optimizer",
+      "description": "Analyze and optimize SQL queries"
+    },
+    {
+      "name": "queue-builder",
+      "source": "./generated-plugins/queue-builder",
+      "description": "Set up message queues with workers"
+    },
+    {
+      "name": "rate-limiter",
+      "source": "./generated-plugins/rate-limiter",
+      "description": "Generate rate limiting middleware"
+    },
+    {
+      "name": "rbac-forge",
+      "source": "./generated-plugins/rbac-forge",
+      "description": "Generate role-based access control systems"
+    },
+    {
+      "name": "read-replica",
+      "source": "./generated-plugins/read-replica",
+      "description": "Generate read replica routing configs"
+    },
+    {
+      "name": "readme-gen",
+      "source": "./generated-plugins/readme-gen",
+      "description": "Generate comprehensive README.md from project analysis"
+    },
+    {
+      "name": "redis-patterns",
+      "source": "./generated-plugins/redis-patterns",
+      "description": "Generate Redis usage patterns"
+    },
+    {
+      "name": "refactor-planner",
+      "source": "./generated-plugins/refactor-planner",
+      "description": "Create prioritized refactoring plans"
+    },
+    {
+      "name": "regex-builder",
+      "source": "./generated-plugins/regex-builder",
+      "description": "Build and test regex patterns"
+    },
+    {
+      "name": "regression-guard",
+      "source": "./generated-plugins/regression-guard",
+      "description": "Generate regression tests from bug reports"
+    },
+    {
+      "name": "release-manager",
+      "source": "./generated-plugins/release-manager",
+      "description": "Generate release workflows"
+    },
+    {
+      "name": "release-notes",
+      "source": "./generated-plugins/release-notes",
+      "description": "Generate user-facing release notes"
+    },
+    {
+      "name": "resource-tagger",
+      "source": "./generated-plugins/resource-tagger",
+      "description": "Generate cloud resource tagging strategies"
+    },
+    {
+      "name": "responsive-audit",
+      "source": "./generated-plugins/responsive-audit",
+      "description": "Audit CSS for responsive design issues"
+    },
+    {
+      "name": "rest-designer",
+      "source": "./generated-plugins/rest-designer",
+      "description": "Design RESTful APIs from requirements"
+    },
+    {
+      "name": "retry-policy",
+      "source": "./generated-plugins/retry-policy",
+      "description": "Generate retry policies with backoff"
+    },
+    {
+      "name": "router-gen",
+      "source": "./generated-plugins/router-gen",
+      "description": "Generate route configurations"
+    },
+    {
+      "name": "runbook-writer",
+      "source": "./generated-plugins/runbook-writer",
+      "description": "Generate operational runbooks for services"
+    },
+    {
+      "name": "s3-manager",
+      "source": "./generated-plugins/s3-manager",
+      "description": "Generate S3 bucket policies and lifecycle"
+    },
+    {
+      "name": "saga-pattern",
+      "source": "./generated-plugins/saga-pattern",
+      "description": "Generate saga pattern implementations"
     },
     {
       "name": "schema-drift",
@@ -45,14 +890,244 @@
       "description": "Generate database migrations, detect schema drift, validate migration safety, and auto-document schemas"
     },
     {
-      "name": "notify-hub",
-      "source": "./generated-plugins/notify-hub",
-      "description": "Set up notification services (email/SMS/push), create templates, and build notification pipelines with user preferences"
+      "name": "script-runner",
+      "source": "./generated-plugins/script-runner",
+      "description": "Generate npm/package scripts"
+    },
+    {
+      "name": "search-builder",
+      "source": "./generated-plugins/search-builder",
+      "description": "Set up full-text search"
+    },
+    {
+      "name": "secrets-vault",
+      "source": "./generated-plugins/secrets-vault",
+      "description": "Generate secrets manager integrations (Vault, AWS, Azure)"
+    },
+    {
+      "name": "seed-gen",
+      "source": "./generated-plugins/seed-gen",
+      "description": "Generate database seeder scripts"
+    },
+    {
+      "name": "seo-auditor",
+      "source": "./generated-plugins/seo-auditor",
+      "description": "Audit web apps for SEO issues"
+    },
+    {
+      "name": "serializer-gen",
+      "source": "./generated-plugins/serializer-gen",
+      "description": "Generate data serialization layers"
+    },
+    {
+      "name": "serverless-framework",
+      "source": "./generated-plugins/serverless-framework",
+      "description": "Generate Serverless Framework configs"
+    },
+    {
+      "name": "service-discovery",
+      "source": "./generated-plugins/service-discovery",
+      "description": "Generate service discovery configurations"
+    },
+    {
+      "name": "service-mesh",
+      "source": "./generated-plugins/service-mesh",
+      "description": "Generate service mesh configurations"
+    },
+    {
+      "name": "service-scaffold",
+      "source": "./generated-plugins/service-scaffold",
+      "description": "Generate microservice boilerplate"
+    },
+    {
+      "name": "service-template",
+      "source": "./generated-plugins/service-template",
+      "description": "Generate microservice templates"
+    },
+    {
+      "name": "sharding-setup",
+      "source": "./generated-plugins/sharding-setup",
+      "description": "Generate database sharding strategies"
+    },
+    {
+      "name": "sitemap-gen",
+      "source": "./generated-plugins/sitemap-gen",
+      "description": "Generate XML sitemaps from routes"
+    },
+    {
+      "name": "smoke-test",
+      "source": "./generated-plugins/smoke-test",
+      "description": "Generate deployment smoke tests"
+    },
+    {
+      "name": "snapshot-test",
+      "source": "./generated-plugins/snapshot-test",
+      "description": "Generate snapshot tests for UI components"
+    },
+    {
+      "name": "snippet-gen",
+      "source": "./generated-plugins/snippet-gen",
+      "description": "Generate IDE code snippets"
+    },
+    {
+      "name": "sns-topics",
+      "source": "./generated-plugins/sns-topics",
+      "description": "Generate SNS topic configurations"
+    },
+    {
+      "name": "soc2-prep",
+      "source": "./generated-plugins/soc2-prep",
+      "description": "Generate SOC2 compliance artifacts and documentation"
+    },
+    {
+      "name": "soft-delete",
+      "source": "./generated-plugins/soft-delete",
+      "description": "Generate soft delete implementations"
+    },
+    {
+      "name": "solid-checker",
+      "source": "./generated-plugins/solid-checker",
+      "description": "Analyze code against SOLID principles"
+    },
+    {
+      "name": "sql-armor",
+      "source": "./generated-plugins/sql-armor",
+      "description": "Detect SQL injection vulnerabilities and fix queries"
+    },
+    {
+      "name": "sqs-setup",
+      "source": "./generated-plugins/sqs-setup",
+      "description": "Generate SQS queue configurations"
+    },
+    {
+      "name": "ssl-manager",
+      "source": "./generated-plugins/ssl-manager",
+      "description": "Check SSL configs, generate renewal scripts, fix TLS settings"
+    },
+    {
+      "name": "state-manager",
+      "source": "./generated-plugins/state-manager",
+      "description": "Generate state management setup"
+    },
+    {
+      "name": "step-functions",
+      "source": "./generated-plugins/step-functions",
+      "description": "Generate AWS Step Functions"
+    },
+    {
+      "name": "storybook-gen",
+      "source": "./generated-plugins/storybook-gen",
+      "description": "Generate Storybook stories for components"
+    },
+    {
+      "name": "systemd-service",
+      "source": "./generated-plugins/systemd-service",
+      "description": "Generate systemd service files"
+    },
+    {
+      "name": "tailwind-helper",
+      "source": "./generated-plugins/tailwind-helper",
+      "description": "Convert CSS to Tailwind, optimize config"
+    },
+    {
+      "name": "task-runner",
+      "source": "./generated-plugins/task-runner",
+      "description": "Generate task runner configurations"
+    },
+    {
+      "name": "tech-debt-tracker",
+      "source": "./generated-plugins/tech-debt-tracker",
+      "description": "Scan TODO/FIXME/HACK and generate tech debt reports"
+    },
+    {
+      "name": "terraform-module",
+      "source": "./generated-plugins/terraform-module",
+      "description": "Generate Terraform modules"
+    },
+    {
+      "name": "test-organizer",
+      "source": "./generated-plugins/test-organizer",
+      "description": "Reorganize test suites following best practices"
+    },
+    {
+      "name": "test-parallelizer",
+      "source": "./generated-plugins/test-parallelizer",
+      "description": "Configure test parallelization"
+    },
+    {
+      "name": "test-reporter",
+      "source": "./generated-plugins/test-reporter",
+      "description": "Generate custom test report formats"
+    },
+    {
+      "name": "theme-builder",
+      "source": "./generated-plugins/theme-builder",
+      "description": "Generate theme systems and dark mode"
+    },
+    {
+      "name": "timeseries-setup",
+      "source": "./generated-plugins/timeseries-setup",
+      "description": "Set up time series data storage"
+    },
+    {
+      "name": "type-strengthener",
+      "source": "./generated-plugins/type-strengthener",
+      "description": "Strengthen TypeScript types, replace any, add generics"
+    },
+    {
+      "name": "unit-test-gen",
+      "source": "./generated-plugins/unit-test-gen",
+      "description": "Generate unit tests with edge cases"
     },
     {
       "name": "uptime-sentinel",
       "source": "./generated-plugins/uptime-sentinel",
       "description": "Create health check endpoints, set up uptime monitoring, generate status pages, and create incident runbooks"
+    },
+    {
+      "name": "validator-gen",
+      "source": "./generated-plugins/validator-gen",
+      "description": "Generate request validation schemas"
+    },
+    {
+      "name": "vercel-config",
+      "source": "./generated-plugins/vercel-config",
+      "description": "Generate Vercel project configurations"
+    },
+    {
+      "name": "version-bumper",
+      "source": "./generated-plugins/version-bumper",
+      "description": "Generate semantic version bumping"
+    },
+    {
+      "name": "visual-regression",
+      "source": "./generated-plugins/visual-regression",
+      "description": "Set up visual regression testing"
+    },
+    {
+      "name": "web-vitals",
+      "source": "./generated-plugins/web-vitals",
+      "description": "Set up Core Web Vitals monitoring"
+    },
+    {
+      "name": "webhook-builder",
+      "source": "./generated-plugins/webhook-builder",
+      "description": "Generate webhook systems"
+    },
+    {
+      "name": "websocket-setup",
+      "source": "./generated-plugins/websocket-setup",
+      "description": "Set up WebSocket servers"
+    },
+    {
+      "name": "workspace-setup",
+      "source": "./generated-plugins/workspace-setup",
+      "description": "Generate monorepo workspace configurations"
+    },
+    {
+      "name": "xss-shield",
+      "source": "./generated-plugins/xss-shield",
+      "description": "Scan for XSS vulnerabilities in templates and frontend code"
     }
   ]
 }

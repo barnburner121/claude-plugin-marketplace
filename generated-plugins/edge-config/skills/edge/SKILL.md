@@ -1,0 +1,20 @@
+---
+name: edge
+description: Generate edge computing configurations
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
+---
+
+# edge-config
+
+Generate edge computing configurations.
+
+## Tools
+
+This skill uses the following tools:
+
+- **Read** — Read files from the filesystem
+- **Write** — Write files to the filesystem
+- **Edit** — Make targeted edits to existing files
+- **Bash** — Execute shell commands
+- **Grep** — Search file contents with regex
+- **Glob** — Find files by pattern matching
